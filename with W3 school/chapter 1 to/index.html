@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            first javascript practice
+
+        </h1>
+        <p id="demo" onclick="change()">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, doloribus nisi modi autem quis odit quod explicabo illum alias dignissimos, voluptatem cumque dolores nam odio sapiente et sint doloremque fugit atque numquam sequi ratione.
+        </p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML='first click of javasrcipty'"> click me </button>
+    
+    </div>
+
+    <div class="head">
+        <button type="button" onclick="document.getElementById('mybulb').style.fontSize='40px' "> change font size</button>
+
+        <h4 id="mybulb">my bulb</h4>
+
+    </div>
+    
+<!-- bulb section -->
+
+    <div class="img">
+
+      
+        
+        <button type="button" onclick="document.getElementById('bulb').src='images/pic_bulbon.gif'"> turn on</button>
+
+        <img id="bulb" src="images/pic_bulboff.gif" alt="">
+        <button type="button" onclick="document.getElementById('bulb').src='images/pic_bulboff.gif'"> turn off </button>
+    </div>
+
+
+<div class="display-none">
+<button type="button" onclick="document.getElementById('bulb').style.display = 'none'" style="text-align: center;">Display none</button>
+</div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

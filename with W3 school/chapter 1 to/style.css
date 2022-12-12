@@ -1,0 +1,13 @@
+.container h1 {
+  text-align: center;
+}
+
+.container #demo {
+  color: blue;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+}
+/*# sourceMappingURL=style.css.map */
