@@ -33,7 +33,11 @@ let arr1 = [];
 for (let i = 0; i < 100; i = i + 2) {
   arr1.push(i);
 }
-
+// Nested loops
+// Sometimes it can be necessary to use a loop inside a loop. A loop inside a
+// loop is called a nested loop. Often it is not the best solution to the problem.
+// It could even be a sign of poorly written code (sometimes called "code
+// smell" among programmers)
 let arrOfArrays = [];
 for (let i = 0; i < 3; i++) {
   arrOfArrays.push([]);
