@@ -16,7 +16,7 @@ let x = letters.join();
 console.log(x);
 
 let letters = ["a", "b", "c"];
-let x = letters.join('-');
+let x = letters.join("-");
 console.log(x);
 
 let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
@@ -27,7 +27,7 @@ let indexNotFound = poem.indexOf("python");
 console.log(indexNotFound);
 
 if (poem.indexOf("python") != -1) {
-    // do stuff
+  // do stuff
 }
 
 let searchStr = "When I see my fellow, I say hello";
@@ -48,7 +48,7 @@ console.log(pos2);
 
 let str = "Create a substring";
 let substr1 = str.slice(5);
-let substr2 = str.slice(0,3);
+let substr2 = str.slice(0, 3);
 console.log("1:", substr1);
 console.log("2:", substr2);
 
@@ -77,7 +77,10 @@ console.log(fixed_caps);
 
 let caps = "HI HOW ARE YOU?";
 let fixed_caps = caps.toLowerCase();
-let first_capital = fixed_caps.charAt(0).toUpperCase().concat(fixed_caps.slice(1));
+let first_capital = fixed_caps
+  .charAt(0)
+  .toUpperCase()
+  .concat(fixed_caps.slice(1));
 console.log(first_capital);
 
 let encouragement = "You are doing great, keep up the good work!";
@@ -92,4 +95,3 @@ console.log(bool_start3);
 
 let bool_end = encouragement.endsWith("Something else");
 console.log(bool_end);
-
