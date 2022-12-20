@@ -1,0 +1,55 @@
+<!-- Selecting page elements
+The document object contains many properties and methods. In order to
+work with elements on the page, you'll first have to find them. If you need
+to change the value of a certain paragraph, you'll have to grab this
+paragraph first. We call this selecting the paragraph. After selecting, we can
+start changing it.
+To select page elements to use within your JavaScript code and in order to
+manipulate elements, you can use either the querySelector() or
+querySelectorAll() method. Both of these can be used to select page
+elements either by tag name, ID, or class.
+The document.querySelector() method will return the first element within
+the document that matches the specified selectors. If no matching page
+elements are found, the result null is returned. To return multiple
+matching elements, you can use the method
+document.querySelectorAll() .
+The querySelectorAll() method will return a static NodeList , which
+represents a list of the document's elements that match the specified group
+of selectors. We will demonstrate the usage of both querySelector() and
+querySelectorAll() with the following HTML snippet: -->
+
+
+<!doctype html>
+<html>
+ <head>
+ <title>JS Tester</title>
+ </head>
+ <body>
+ <h1 class="output">Hello World</h1>
+ <div class="output">Test</div>
+ <script>
+//   We are going to select the h1 element with querySelector() . Therefore, if
+// there is more than one, it will just grab the first:
+  const ele1 = document.querySelector("h1");
+console.dir(ele1);
+// If you want to select multiple elements, you can use querySelectorAll() .
+// This method is going to return all the elements that match the selector in an
+// array. In this example, we are going to look for instances of the output
+// class, which is done by prepending the class name with a dot.
+const eles = document.querySelectorAll(".output");
+console.log(eles);
+
+// After selecting, you can start using the dynamic features of the DOM: you
+// can manipulate the elements using JavaScript. Content can be changed in
+// the same way a variable's contents can be, elements can be removed or
+// added, and styles can be adjusted. This can all be done with JavaScript and
+// the way the user interacts with the page can affect this. We have seen the
+// two most common methods to select in the DOM here, querySelector()
+// and querySelectorAll() . You can actually select any element you might
+// need with these. There are lots more, which you'll encounter in the next
+// chapter, along with many of the ways the DOM can be manipulated.
+
+
+ </script>
+ </body>
+</html>
