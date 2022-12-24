@@ -1,3 +1,21 @@
+<!-- Accessing elements with a CSS selector
+We can also access elements using a CSS selector. We do this with
+querySelector() and querySelectorAll() . We then give the CSS selector
+as an argument, and this will filter the items in the HTML document and
+only return the ones that satisfy the CSS selector.
+The CSS selector might look a bit different than you might think at first.
+Instead of looking for a certain layout, we use the same syntax as we use
+when we want to specify a layout for certain elements. We haven't
+discussed this yet, so we will cover it here briefly.
+If we state p as a CSS selector, it means all the elements with tag p . This
+would look like this:
+document.querySelectorAll("p");
+If we say p.example , it means all the p tag elements with example as the
+class. They can also have other classes; as long as example is in there, it
+will match. We can also say #one , which means select all with an ID of
+one . -->
+
+
 <html>
   <body>
     <script>
