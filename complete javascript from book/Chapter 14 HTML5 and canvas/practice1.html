@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #mycanvas {
+ border: 1px solid black;
+ }
+ </style>
+
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+</body>
+<script>
+    let canvas = document.getElementById("mycanvas")
+    let ctx = canvas.getContext("2d");
+    canvas.width = 200;
+    canvas.height  = 200;
+    ctx.font = "24px Arial"
+    let text = "Hi my first Canvas";
+    ctx.fillText(text  , 20 , 40)
+
+</script>
+</html>

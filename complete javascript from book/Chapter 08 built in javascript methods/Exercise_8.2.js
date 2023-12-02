@@ -44,3 +44,9 @@ const arr2 = arr.filter((value, index, array) => {
   return array.indexOf(value) === index;
 });
 console.log(arr2);
+
+
+let caps = "HI HOW ARE YOU?";
+let fixed_caps = caps.toLowerCase();
+let first_capital = fixed_caps.charAt(0).toUpperCase().concat(fixed_caps.slice(1))
+console.log(first_capital);
