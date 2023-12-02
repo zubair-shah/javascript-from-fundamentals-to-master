@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1: 2s student roll No
+      // 2: 2s 2nd name and age
+      // 3: 2s gender
+
+      const getRollNo = () => {
+        setTimeout(() => {
+          console.log("call ater 2 second");
+          let Roll = [1, 2, 3, 4455, 665];
+
+          setTimeout(() => {
+            console.log(Roll[3]);
+            const bioData = {
+              name: "zubair shah",
+              age: 21,
+            };
+
+            setTimeout(() => {
+              console.log(
+                `my name is ${bioData.name} and my age is ${bioData.age}`
+              );
+            }, 2000);
+          }, 2000);
+        }, 2000);
+      };
+
+      getRollNo();
+    </script>
+  </body>
+</html>

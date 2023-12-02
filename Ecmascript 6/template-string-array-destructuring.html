@@ -1,0 +1,40 @@
+<script>
+  // ================lecture-4===================
+  // ============Template-strings new strings method=``===========
+  // const a = prompt("enter your first Name");
+  // const b = prompt("enter your last Name ");
+  // const Name = `${a} is my first Name and My last name is ${b}`;
+  // console.log(Name.startsWith("z"));
+  // console.log(Name.startsWith("M"));
+  // console.log(Name.startsWith("m"));
+  // console.log(Name.endsWith("h"));
+  // console.log(Name.includes("zub"));
+  // console.log(Name.repeat(10));
+
+  // ================lecture-5===================
+  // ============Array Destructuring===========
+
+  const myprogLang = ["javascript", "python", "java", "c", "php"];
+
+  //es5 method
+
+  // var top1 = myprogLang[0];
+  // var top2 = myprogLang[1];
+  // var top3 = myprogLang[2];
+  // console.log(
+  //   `my fav progm lang is ${top1} and 2nd fav is ${top2} and third one is ${top3} `
+  // );
+
+  // -------------------------es6-----------method----------------
+
+  // let [top1, top2, top3, top4, top5] = myprogLang;
+  // console.log(
+  //   `my fav progm lang is ${top2} and 2nd fav is ${top3} and third one is ${top1} `
+  // );
+
+  let top1, toplast;
+  [top1, , , , toplast] = myprogLang;
+  console.log(
+    `my fav progm lang is ${top1} and 2nd fav is ${toplast} and ${myprogLang} `
+  );
+</script>
