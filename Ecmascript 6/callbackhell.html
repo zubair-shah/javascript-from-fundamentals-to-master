@@ -12,28 +12,82 @@
       // 2: 2s 2nd name and age
       // 3: 2s gender
 
-      const getRollNo = () => {
-        setTimeout(() => {
-          console.log("call ater 2 second");
-          let Roll = [1, 2, 3, 4455, 665];
+      // const getRollNo = () => {
+      //   setTimeout(() => {
+      //     console.log("call ater 2 second");
+      //     let Roll = [1, 2, 3, 4455, 665];
 
-          setTimeout(() => {
-            console.log(Roll[3]);
-            const bioData = {
-              name: "zubair shah",
-              age: 21,
-            };
+      //     setTimeout(() => {
+      //       console.log(Roll[3]);
+      //       const bioData = {
+      //         name: "zubair shah",
+      //         age: 21,
+      //       };
+          
+      //       setTimeout(() => {
+      //         console.log(
+      //           `my name is ${bioData.name} and my age is ${bioData.age}`
+      //         );
+      //       }, 2000);
+      //     }, 2000);
+      //   }, 2000);
+      // };
 
-            setTimeout(() => {
-              console.log(
-                `my name is ${bioData.name} and my age is ${bioData.age}`
-              );
-            }, 2000);
-          }, 2000);
-        }, 2000);
-      };
+      // getRollNo();
 
-      getRollNo();
+function getUser(userId, successCallback, errorCallback) {
+  setTimeout(function() {
+    // Simulate fetching user data
+    const user = { id: userId, name: "John Doe" };
+    successCallback(user);
+  }, 1000);
+}
+
+function getOrders(userId, successCallback, errorCallback) {
+  setTimeout(function() {
+    // Simulate fetching user orders
+    const orders = [{ id: 1, amount: 50.0 }, { id: 2, amount: 30.0 }];
+    successCallback(orders);
+  }, 1000);
+}
+
+function getOrderDetails(orderId, successCallback, errorCallback) {
+  setTimeout(function() {
+    // Simulate fetching order details
+    const orderDetails = { id: orderId, product: "Widget", quantity: 2 };
+    successCallback(orderDetails);
+  }, 1000);
+}
+
+function processOrder(orderDetails, successCallback, errorCallback) {
+  setTimeout(function() {
+    // Simulate processing order
+    successCallback("Order processed successfully");
+  }, 1000);
+}
+
+getUser(null, function(user) {
+  getOrders(user.id, function(orders) {
+    getOrderDetails(orders[0].id, function(orderDetails) {
+      processOrder(orderDetails, function(result) {
+        console.log("Result:", result);
+      }, function(error) {
+        console.error("Error processing order:", error);
+      });
+    }, function(error) {
+      console.error("Error fetching order details:", error);
+    });
+  }, function(error) {
+    console.error("Error fetching orders:", error);
+  });
+}, function(error) {
+  console.error("Error fetching user:", error);
+});
+
+
+
+
+
     </script>
   </body>
 </html>

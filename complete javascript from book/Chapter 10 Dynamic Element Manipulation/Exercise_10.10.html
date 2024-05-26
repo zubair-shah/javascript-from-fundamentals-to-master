@@ -15,13 +15,11 @@
         <ol id="sList"> </ol>
     </div>
     <script>
-        document.getElementById("addNew").onclick = function () {
-            addOne();
-        }
+        document.getElementById("addNew").addEventListener("click", addOne)
         function addOne() {
             var a = document.getElementById("addItem").value;
             var li = document.createElement("li");
-            li.appendChild(document.createTextNode(a));
+            li.innerText = a;
             document.getElementById("sList").appendChild(li);
         }
     </script>
