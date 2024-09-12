@@ -58,7 +58,7 @@
 // line.
 // I'm containing a backslash: \!
 
-let singleString = "Hi there!";
+let singleString = 'Hi there!';
 let doubleString = "How are you?";
 
 let language = "JavaScript";

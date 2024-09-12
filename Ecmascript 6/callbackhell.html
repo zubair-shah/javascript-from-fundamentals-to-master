@@ -39,7 +39,7 @@ function getUser(userId, successCallback, errorCallback) {
   setTimeout(function() {
     // Simulate fetching user data
     const user = { id: userId, name: "John Doe" };
-    successCallback(user);
+    errorCallback(user);
   }, 1000);
 }
 

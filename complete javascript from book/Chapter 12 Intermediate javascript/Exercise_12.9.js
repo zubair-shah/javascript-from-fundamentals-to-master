@@ -7,9 +7,11 @@ let myList = [{
     "status": false
 }
 ];
-
+console.log(myList)
 const newStr = JSON.stringify(myList);
-const newObj = JSON.parse(newStr);
-newObj.forEach((el)=>{
-    console.log(el);
-});
+console.log(newStr)
+// const newObj = JSON.parse(newStr);
+// console.log(newObj)
+// newObj.forEach((el)=>{
+//     console.log(el);
+// });
