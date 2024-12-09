@@ -76,6 +76,7 @@ if (age < 3) {
 // "then" and the colon as "else" here:
 
 let access = age < 18 ? "denied" : "allowed";
+
 console.log(access);
 
 age < 18 ? console.log("denied") : console.log("allowed");

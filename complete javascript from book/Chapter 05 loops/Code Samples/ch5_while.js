@@ -19,6 +19,10 @@ while (i < 10) {
   i++;
 }
 
+
+
+
+
 let someArray = ["Mike", "Antal", "Marc", "Emir", "Louiza", "Jacky"];
 let notFound = true;
 

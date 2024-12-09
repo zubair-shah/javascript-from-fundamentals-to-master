@@ -41,10 +41,10 @@ for (let x = 0; x < cells + 1; x++) {
     if (row != undefined) {
       grid.push(row);
     }
-    row = [];
+    row = []; 
   }
   counter++;
   let temp = counter;
   row.push(temp);
 }
-console.table(grid);
+console.log(grid);
